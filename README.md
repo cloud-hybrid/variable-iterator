@@ -11,8 +11,7 @@ AWS Environment Variable Generator, Store, &amp; Sanitation
 ```json
 {
     "Global": {
-        "Organization": null,
-        ""
+        "Organization": null
     },
     "Development": [
         {
