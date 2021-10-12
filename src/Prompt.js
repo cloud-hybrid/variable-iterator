@@ -12,7 +12,11 @@ import * as Input from "readline";
  */
 
 const Prompt = async (content, _) => {
-    const Reader = Input.createInterface({ input: process.stdin, output: process.stdout, prompt: content });
+    const Reader = Input.createInterface({
+        input: process.stdin,
+        output: process.stdout,
+        prompt: content
+    });
 
     process.stdout.write(Reader.getPrompt());
 
@@ -21,7 +25,7 @@ const Prompt = async (content, _) => {
             for await (const entry of Reader) yield entry;
         })();
 
-        return async () => ((await $.next()).value);
+        return async () => (await $.next()).value;
     })();
 
     const main = async (_) => {
