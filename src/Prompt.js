@@ -31,7 +31,6 @@ const Prompt = async (content, _) => {
         Reader.close();
 
         return $;
-
     };
 
     return await main(_);
