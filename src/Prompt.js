@@ -40,6 +40,7 @@ const Prompt = async (content, _) => {
  *
  * @param content
  * @param assignment
+ *
  * @returns {Promise<{}>}
  *
  */
