@@ -4,6 +4,7 @@ import * as Input from "readline";
  *
  * @param content {string} - Prompt Output
  * @param _ {string} - Object Key Assignment
+ *
  * @returns {Object}
  *
  * @constructor
