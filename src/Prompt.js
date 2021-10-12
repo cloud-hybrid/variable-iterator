@@ -41,6 +41,7 @@ const Prompt = async (content, _) => {
  * @param content
  * @param assignment
  * @returns {Promise<{}>}
+ *
  */
 
 export default async (content, assignment = "Object") => await Prompt(content, assignment);
