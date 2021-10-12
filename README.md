@@ -8,6 +8,8 @@ AWS Environment Variable Generator, Store, &amp; Sanitation
 
 - If any key-value assignment is found to have a `null` value, the User will be linted with the data-type and expected input via prompt.
 
+**`Environments.json`**
+
 ```json
 {
     "Global": {
@@ -22,10 +24,24 @@ AWS Environment Variable Generator, Store, &amp; Sanitation
         },
         {
             "Key": "...",
-            "Value": "...",
-            "Secret": null,
-            "Overwrite": false
+            "Value": "..."
         }
     ]
 }
 ```
+
+### `null` Key-Value Assignment(s) ###
+
+In order to require User-input, specify the Key as an arbitrary but unique string,
+followed with a null `Value` assignment.
+
+### Optional Chaining ###
+
+The following package makes use out of [*Optional Chaining*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining).
+
+> The optional chaining operator (?.) enables [users] to read the value of a property located deep within a chain of connected objects without having to check 
+> that each reference in the chain is valid.
+
+Please note, the root object must be present; optional chaining operations
+that're performed on an `undefined` or `null` root will result in
+runtime exceptions.

@@ -1,26 +1,19 @@
 {
-  "name": "variable-iterator",
-  "version": "0.0.1",
-  "description": "AWS Environment Variable Generator, Store, & Sanitation",
-  "main": "Index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cloud-hybrid/variable-iterator.git"
-  },
-  "keywords": [
-    "Environment",
-    "Variable",
-    "AWS",
-    "Cloud",
-    "SSM"
-  ],
-  "author": "Jacob B. Sanders",
-  "license": "BSD-3-Clause",
-  "bugs": {
-    "url": "https://github.com/cloud-hybrid/variable-iterator/issues"
-  },
-  "homepage": "https://github.com/cloud-hybrid/variable-iterator#readme"
+    "name": "variable-iterator",
+    "version": "0.0.1",
+    "main": "Index.js",
+    "scripts": {
+        "start": "node Index.js"
+    },
+    "engines": {
+        "node": "^16.x",
+        "npm": "^7.x"
+    },
+    "type": "module",
+    "engineStrict": true,
+    "license": "BSD-3-Clause",
+    "author": "Jacob B. Sanders",
+    "description": "AWS Environment Variable Management",
+    "homepage": "https://github.com/cloud-hybrid/variable-iterator#readme",
+    "repository": "git+https://github.com/cloud-hybrid/variable-iterator.git"
 }

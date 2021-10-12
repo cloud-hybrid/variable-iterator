@@ -1,0 +1,13 @@
+{
+    "Global": {
+        "Test": true
+    },
+    "Development": [
+        {
+            "Key": "Key",
+            "Value": "Value",
+            "Secret": false,
+            "Overwrite": true
+        }
+    ]
+}
