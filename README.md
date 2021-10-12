@@ -28,8 +28,8 @@ AWS Environment Variable Generator, Store, &amp; Sanitation
 
 ### `null` Key-Value Assignment(s) ###
 
-In order to require User-input, specify the Key as an arbitrary but unique string,
-followed with a null `Value` assignment.
+In order to require user-input, specify the key as an arbitrary but unique string,
+followed with a null assignment.
 
 ### Optional Chaining ###
 
