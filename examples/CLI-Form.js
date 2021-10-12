@@ -1,4 +1,4 @@
-import { default as Prompt } from "./../src/Prompt.js";
+import { default as Prompt } from "variable-iterator";
 
 const name = await Prompt("Name" + ":" + " ", "Name");
 const height = await Prompt("Height" + ":" + " ", "Height");
