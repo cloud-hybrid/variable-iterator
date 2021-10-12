@@ -11,7 +11,7 @@ import * as Input from "readline";
  */
 
 const Prompt = async (content, _) => {
-    const Reader = Input.createInterface({ input: process.stdin, output: process.stdout, prompt: content });
+    const Reader = Input.createInterface({ input: process.execArgv.shift() || process.stdin, output: process.stdout, prompt: content });
 
     process.stdout.write(Reader.getPrompt());
 
