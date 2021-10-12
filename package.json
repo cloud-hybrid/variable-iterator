@@ -2,13 +2,9 @@
     "name": "variable-iterator",
     "version": "0.0.1",
     "main": "Index.js",
-    "scripts": {
-        "start": "node Index.js"
-    },
-    "engines": {
-        "node": "^16.x",
-        "npm": "^7.x"
-    },
+    "scripts": { "start": "node Index.js" },
+    "engines": { "node": "^16.x", "npm": "^7.x" },
+    "exports": [ "./Index.js" ],
     "type": "module",
     "engineStrict": true,
     "license": "BSD-3-Clause",
