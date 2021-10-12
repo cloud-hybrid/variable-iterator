@@ -10,6 +10,6 @@
     "license": "BSD-3-Clause",
     "author": "Jacob B. Sanders",
     "description": "AWS Environment Variable Management",
-    "homepage": "https://github.com/cloud-hybrid/variable-iterator#readme",
+    "homepage": "https://github.com/cloud-hybrid/variable-iterator",
     "repository": "git+https://github.com/cloud-hybrid/variable-iterator.git"
 }
