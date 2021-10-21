@@ -107,14 +107,15 @@ dist
 
 ### --> Environment Variable File(s)
 
-.env
+!.env
+!.env.development
+!.env.qa
+!.env.staging
+!.env.uat
+!.env.pre-production
+!.env.production
+
 .env.local
-.env.development
-.env.qa
-.env.staging
-.env.uat
-.env.pre-production
-.env.production
 .env.development.local
 .env.qa.local
 .env.staging.local
