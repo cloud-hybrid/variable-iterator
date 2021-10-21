@@ -1,43 +1,77 @@
-# variable-iterator #
+# Environment Variables #
 
-AWS Environment Variable Generator, Store, &amp; Sanitation 
+## Configuration ##
 
-## Schema ##
+The `variables` key can be of three different types:
 
-**`Environments.json`**
+- `String`: *Path to Configuration File*
+- `Array<String>`: *Variable(s) that will Prompt for User Input during Configuration*
+- `Array<Object>`: *Default Key-Value Environment Variables*
+
+Where the latter two options can be mixed and matched arbitrarily.
+
+### Examples ###
+
+**User-Prompt Variables**:
 
 ```json
 {
-    "Global": {
-        "Organization": null
-    },
-    "Development": [
-        {
-            "Key": "...",
-            "Value": "...",
-            "Secret": null,
-            "Overwrite": false
-        },
-        {
-            "Key": "...",
-            "Value": "..."
-        }
+    "type": "module",
+    "variables": [
+        "PRIVATE_TOKEN"
     ]
 }
 ```
 
-### Key-Value Assignment(s) ###
+**All CRA Advanced Configuration Options w/Defaults**:
 
-In order to require user-input, specify the key as an arbitrary but unique string,
-followed with a `null` assignment.
+```json
+{
+    "...": "...",
+    "variables": [
+        {
+            "PORT": "8443"
+        },
+        {
+            "HTTPS": "true"
+        },
+        {
+            "HOST": "localhost"
+        },
+        {
+            "FAST_REFRESH": "true"
+        },
+        {
+            "NODE_ENV": "development"
+        },
+        {
+            "SCROLL_TRACKING": "true"
+        },
+        {
+            "GENERATE_SOURCEMAP": "false"
+        },
+        {
+            "INLINE_RUNTIME_CHUNK": "true"
+        },
+        {
+            "ESLINT_NO_DEV_ERRORS": "false"
+        },
+        {
+            "DISABLE_ESLINT_PLUGIN": "true"
+        },
+        {
+            "DISABLE_NEW_JSX_TRANSFORM": "false"
+        },
+        {
+            "REACT_EDITOR": "/Applications/WebStorm.app"
+        },
+        {
+            "CHOKIDAR_USEPOLLING": "false"
+        },
+        {
+            "BROWSER": "google chrome"
+        }
+    ]
+}
 
-### Optional Chaining ###
-
-The following package makes use out of [*Optional Chaining*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining).
-
-> The optional chaining operator (?.) enables [users] to read the value of a property located deep within a chain of connected objects without having to check 
-> that each reference in the chain is valid.
-
-Please note, the root object must be present; optional chaining operations
-that're performed on an `undefined` or `null` root will result in
-runtime exceptions.
+```

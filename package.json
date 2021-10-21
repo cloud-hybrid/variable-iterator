@@ -1,10 +1,10 @@
 {
     "name": "variable-iterator",
     "version": "0.0.1",
-    "main": "Index.js",
-    "scripts": { "start": "node Index.js" },
+    "main": "index.js",
+    "scripts": { "start": "node Index.js", "example": "node examples/CLI-Form.js" },
     "engines": { "node": "^16.x", "npm": "^7.x" },
-    "exports": [ "./Index.js" ],
+    "exports": [ "./index.js" ],
     "type": "module",
     "engineStrict": true,
     "license": "BSD-3-Clause",

@@ -1,23 +1,19 @@
 import { default as Prompt } from "variable-iterator";
 
-const name = await Prompt("Name" + ":" + " ", "Name");
-const height = await Prompt("Height" + ":" + " ", "Height");
-const age = await Prompt("Age" + ":" + " ", "Age");
+const $ = {
+    Username: async () => await Prompt("Username: "),
+    Token: async () => await Prompt("Token: "),
+    URL: async () => await Prompt("URL: ")
+};
 
-console.debug("Name" + ":", name);
-console.debug("Height" + ":", height);
-console.debug("Age" + ":", age);
+const username = await $.Username();
+const token = await $.Token();
+const url = await $.URL();
 
-const Data = {};
-
-[name, height, age].forEach(
-    (_) => {
-        const $ = Object.keys(_).pop();
-
-        Data[$] = Object.values(_).pop();
-    }
-);
-
-console.debug(Data);
+console.log({
+    username,
+    token,
+    url
+});
 
 process.exit(0);
