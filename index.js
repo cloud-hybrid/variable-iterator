@@ -6,7 +6,7 @@ import * as Process from "process";
  *
  * @param query
  *
- * @returns {Promise<unknown>}
+ * @returns {Promise<String|null>}
  *
  * @constructor
  *
