@@ -68,8 +68,8 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
-.env.test
+# ... .env
+# ... .env.test
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -104,3 +104,20 @@ dist
 
 .DS_Store
 .idea
+
+### --> Environment Variable File(s)
+
+.env
+.env.local
+.env.development
+.env.qa
+.env.staging
+.env.uat
+.env.pre-production
+.env.production
+.env.development.local
+.env.qa.local
+.env.staging.local
+.env.uat.local
+.env.pre-production.local
+.env.production.local

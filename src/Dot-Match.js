@@ -1,4 +1,4 @@
-const Patterns = [
+export const Patterns = [
     {
         File: ".env",
         Pattern: "(?<![\\w\\d]).env(?![\\w\\d])"
@@ -57,6 +57,4 @@ const Patterns = [
     }
 ];
 
-Patterns.forEach(
-    (Target) => console.debug(Target)
-);
+export const Files = Patterns.map((Value) => Value.File);
