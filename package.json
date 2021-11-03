@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "main": "index.js",
     "scripts": { "start": "node Index.js", "example": "node examples/CLI-Form.js" },
-    "engines": { "node": "^16.x", "npm": "^7.x" },
+    "engines": { "node": "^16.x" },
     "exports": [ "./index.js" ],
     "type": "module",
     "engineStrict": true,
